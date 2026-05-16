@@ -1,20 +1,26 @@
-// Promises
+// Promise with delay
 
-// A Promise means:
-// I promise to give you a result in the future — either success or failure.
-// A promise has 3 states:
-// pending   → still working
-// fulfilled → success
-// rejected  → failed
+function fetchUser() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const user = {
+        id: 1,
+        name: "Abhishek",
+      };
 
-const promise = new Promise((resolve, reject) => {
-  const success = true;
+      resolve(user);
+    }, 2000);
+  });
+}
 
-  if (success) {
-    resolve("Data received");
-  } else {
-    reject("Something went wrong!");
-  }
-});
+fetchUser()
+  .then((user) => {
+    console.log(user);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
-promise.then((data) => console.log(data)).catch((error) => console.log(error));
+//   Promise returns data later
+// .then handles success
+// .catch handles error
