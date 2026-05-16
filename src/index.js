@@ -1,6 +1,5 @@
-function add(a, b) {
-  return a + b;
-}
+const multiply = (a, b) => {
+  return a * b;
+};
 
-const result = add(10, 20);
-console.log(result);
+console.log(multiply(6 * 8));
