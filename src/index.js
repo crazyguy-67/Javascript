@@ -1,17 +1,16 @@
-let name = "Abhishek";
-const age = 22;
-let isStudent = true;
-let salary = null;
-let city;
+const a = 10;
+const b = 5;
 
-// let = value can change
-// const = value cannot be reassigned
-// var = old way, avoid for now
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
 
-const name = "Abhishek";
-let age = 25;
-let city = "Ranchi";
+const age = 18;
 
-console.log(name);
-console.log(age);
-console.log(city);
+if (age >= 18) {
+  console.log("You can vote");
+} else {
+  console.log("You cannot vote");
+}
