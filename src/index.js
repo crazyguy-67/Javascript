@@ -1,6 +1,6 @@
-function greetUser(name) {
-  console.log(`Hello ${name}`);
+function add(a, b) {
+  return a + b;
 }
 
-greetUser("Abhishek");
-greetUser("Rahul");
+const result = add(10, 20);
+console.log(result);
