@@ -1,16 +1,27 @@
-const a = 10;
-const b = 5;
+// for loop
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+// while loop
+let count = 1;
 
-const age = 18;
+while (count <= 5) {
+  console.log(count);
+  count++;
+}
 
-if (age >= 18) {
-  console.log("You can vote");
-} else {
-  console.log("You cannot vote");
+// for ..of
+const fruits = ["apple", "banana", "gauva"];
+
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+// Multiplication table example:
+
+const number = 5;
+
+for (let i = 1; i < number; i++) {
+  console.log(`${number}*${i} = ${number * i}`);
 }
