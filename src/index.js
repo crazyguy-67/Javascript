@@ -1,5 +1,5 @@
-const multiply = (a, b) => {
-  return a * b;
-};
+const skills = ["HTML", "CSS", "JavaScript", "React"];
 
-console.log(multiply(6 * 8));
+console.log(skills);
+console.log(skills[0]);
+console.log(skills[1]);
