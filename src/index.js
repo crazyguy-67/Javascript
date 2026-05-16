@@ -1,5 +1,13 @@
-const skills = ["HTML", "CSS", "JavaScript", "React"];
+const fruits = ["apple", "banana"];
 
-console.log(skills);
-console.log(skills[0]);
-console.log(skills[1]);
+fruits.push("mango");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.unshift("orange");
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
