@@ -1,14 +1,15 @@
-// A call back is a function passed into another funciton.
+// callback with async code
+function fetchUser(callback) {
+  setTimeout(() => {
+    const user = {
+      name: "Abhishek",
+      age: 22,
+    };
 
-function greet(name, callback) {
-  console.log("hello" + name);
-  callback();
+    callback(user);
+  }, 2000);
 }
 
-function sayBye() {
-  console.log("Bye");
-}
-
-greet("Abhishek", sayBye);
-
-// Here, sayBye is the callback.
+fetchUser((user) => {
+  console.log(user);
+});
