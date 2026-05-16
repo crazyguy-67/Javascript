@@ -1,15 +1,29 @@
-// callback with async code
-function fetchUser(callback) {
+// Callback problem: callback hell
+function step1(callback) {
   setTimeout(() => {
-    const user = {
-      name: "Abhishek",
-      age: 22,
-    };
-
-    callback(user);
-  }, 2000);
+    console.log("Step 1 done");
+    callback();
+  }, 1000);
 }
 
-fetchUser((user) => {
-  console.log(user);
+function step2(callback) {
+  setTimeout(() => {
+    console.log("Step 2 done");
+    callback();
+  }, 1000);
+}
+
+function step3(callback) {
+  setTimeout(() => {
+    console.log("Step 3 done");
+    callback();
+  }, 1000);
+}
+
+step1(() => {
+  step2(() => {
+    step3(() => {
+      console.log("all done!");
+    });
+  });
 });
