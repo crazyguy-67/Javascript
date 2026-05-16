@@ -1,29 +1,20 @@
-// Callback problem: callback hell
-function step1(callback) {
-  setTimeout(() => {
-    console.log("Step 1 done");
-    callback();
-  }, 1000);
-}
+// Promises
 
-function step2(callback) {
-  setTimeout(() => {
-    console.log("Step 2 done");
-    callback();
-  }, 1000);
-}
+// A Promise means:
+// I promise to give you a result in the future — either success or failure.
+// A promise has 3 states:
+// pending   → still working
+// fulfilled → success
+// rejected  → failed
 
-function step3(callback) {
-  setTimeout(() => {
-    console.log("Step 3 done");
-    callback();
-  }, 1000);
-}
+const promise = new Promise((resolve, reject) => {
+  const success = true;
 
-step1(() => {
-  step2(() => {
-    step3(() => {
-      console.log("all done!");
-    });
-  });
+  if (success) {
+    resolve("Data received");
+  } else {
+    reject("Something went wrong!");
+  }
 });
+
+promise.then((data) => console.log(data)).catch((error) => console.log(error));
