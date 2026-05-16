@@ -1,0 +1,193 @@
+Phase 1: JavaScript Fundamentals
+
+Start here:
+
+Variables: let, const
+Data types: string, number, boolean, null, undefined, object, array
+Operators: +, -, ===, !==, &&, ||
+Conditions: if, else, switch
+Loops: for, while, for...of
+Functions:
+normal functions
+arrow functions
+parameters and return
+Arrays:
+push, pop, shift, unshift
+map, filter, reduce, find, some, every
+Objects:
+object creation
+accessing properties
+destructuring
+nested objects
+
+Mini projects:
+
+Counter
+Todo list in console
+Student marks calculator
+Expense tracker in console
+Phase 2: DOM Manipulation
+
+This is important before React.
+
+Learn:
+
+document.querySelector
+getElementById
+Changing text/content
+Changing styles/classes
+Creating elements
+Removing elements
+Event listeners:
+click
+submit
+input
+keydown
+Form handling
+Local storage
+
+Mini projects:
+
+Todo app with localStorage
+Password show/hide
+Character counter
+Theme toggle
+Simple quiz app
+Phase 3: Modern JavaScript
+
+This is the real full-stack JS foundation.
+
+Learn:
+
+Template literals
+
+`Hello ${name}`
+
+Destructuring
+
+const { name, age } = user;
+
+Spread/rest operator
+
+const newArr = [...arr, 4];
+
+Optional chaining
+
+user?.profile?.image
+
+Modules
+
+export default App;
+import App from "./App";
+
+Higher-order functions
+
+users.map(user => user.name)
+Callback functions
+
+Error handling
+
+try {
+  // code
+} catch (error) {
+  console.log(error);
+}
+Phase 4: Async JavaScript
+
+Very important for backend, APIs, React, Next.js.
+
+Learn:
+
+Synchronous vs asynchronous code
+setTimeout
+Promises
+.then() and .catch()
+async/await
+fetch
+API calls
+Error handling in async code
+Loading states
+Handling failed requests
+
+Mini projects:
+
+Weather app using API
+GitHub profile finder
+Movie search app
+Random quote generator
+Phase 5: JavaScript for React
+
+Before going deep into React, be strong in:
+
+Array rendering with map
+Conditional rendering logic
+Event handlers
+
+Immutability:
+
+setTodos([...todos, newTodo])
+Updating objects and arrays
+Passing functions
+Filtering and searching data
+Form state handling
+Reusable functions
+
+Practice projects:
+
+Todo app
+Notes app
+Search/filter users
+Shopping cart
+Multi-step form
+Phase 6: JavaScript for Backend
+
+For Node.js and Express, learn:
+
+Node.js basics
+npm
+package.json
+CommonJS vs ES Modules
+File system basics
+Environment variables
+Express.js basics
+Routes
+Controllers
+Middleware
+Request/response cycle
+Status codes
+Error handling
+Authentication logic
+JWT basics
+Cookies
+Password hashing
+API validation
+
+Backend projects:
+
+Notes API
+Todo API
+Auth API
+Blog API
+Chat API
+Phase 7: Advanced JavaScript
+
+Learn these slowly while building projects:
+
+Closures
+Scope
+Hoisting
+this
+Prototypes
+Classes
+Event loop
+Call stack
+Microtasks/macrotasks
+Debouncing
+Throttling
+Currying
+Memoization
+Deep copy vs shallow copy
+Reference vs value
+Garbage collection basics
+
+These topics are also useful for interviews.
