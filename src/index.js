@@ -1,7 +1,14 @@
-console.log("One");
+// A call back is a function passed into another funciton.
 
-setTimeout(() => {
-  console.log("Two");
-}, 2000);
+function greet(name, callback) {
+  console.log("hello" + name);
+  callback();
+}
 
-console.log("Three");
+function sayBye() {
+  console.log("Bye");
+}
+
+greet("Abhishek", sayBye);
+
+// Here, sayBye is the callback.
