@@ -1,19 +1,18 @@
-// Fetch with .then()
+// Fetch with async/await
+async function getUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
+    const data = await response.json();
+
     console.log(data);
-  })
-  .catch((error) => {
+  } catch (error) {
     console.log("Error:", error);
-  });
+  }
+}
 
-// FLOW
-//  fetch API
-// → get response
-// → convert response to JSON
-// → use data
-// → catch error if failed
+getUsers();
+
+// Wait for API response.
+// Then convert response to JSON.
+// Then print data.
